@@ -10,19 +10,21 @@ void bubble_sort(int *array, size_t size){
 size_t i=0;
 int temp;
 int swapped;
-
-if(size<2||array==NULL)
+size_t j;
+if(size < 2 || array == NULL)
 return;
 
 while(i<size-1){
 swapped=0;
-size_t j=0;
-while(j<size-i-1){
-if(array[j]>array[j+1]){
-temp=array[j];
-array[j]=array[j+1];
-array[j+1]=temp;
-swapped=1;
+j = 0;
+while (j < size - i - 1)
+{
+if (array[j] > array[j + 1])
+{
+temp = array[j];
+array[j] = array[j + 1];
+array[j + 1] = temp;
+swapped = 1;
 }
 j++;
 }
