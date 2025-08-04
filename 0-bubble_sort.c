@@ -15,10 +15,9 @@ int temp;
 
 while (i < size - 1)
 {
-
+j = 0;
 while (j < size - 1)
 {
-j = 0;
 if (array[j] > array[j + 1])
 {
 temp = array[j];
