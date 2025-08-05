@@ -8,7 +8,7 @@
  */
 void swap_nodes(listint_t **list, listint_t *node1, listint_t *node2)
 {
-iif (!node1 || !node2)
+if (!node1 || !node2)
 return;
 if (node1->prev)
 node1->prev->next = node2;
