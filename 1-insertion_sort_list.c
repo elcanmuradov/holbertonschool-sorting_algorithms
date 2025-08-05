@@ -7,25 +7,19 @@
 
 void insertion_sort_list(listint_t **list)
 {
-int i, j, temp, index, *complist;
+int i, temp; 
+listint_t complist;
 i = 0;
-j = 0;
-temp = list[0];
-while (list[i] != '\0')
+while (*list)
 {
-complist[i] = temp;
-while (j <= i)
+if (list->n > list->next->n)
 {
-if (list[j] > list[j + 1])
-{
-temp = list[j]
-complist[j] = list[j + 1];
-complist[j + 1] = temp;
-}	
-j++;
+temp = list->n;
+complist->n = list->next->n;
+complist->next->n = temp;
 }
-print_list(complist);
+list = list->next;
 i++;
+print_list(complist);
 }
-
 }
