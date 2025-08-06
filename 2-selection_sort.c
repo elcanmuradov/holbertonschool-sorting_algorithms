@@ -8,11 +8,12 @@
 
 void selection_sort(int *array, size_t size)
 {
-size_t j, i = 0;
-int k, temp2;
-int temp = array[0];
+size_t j, i;
+int k, temp, temp2, sorted;
+j = 0;
 while (j < size)
 {
+temp = array[j];
 while (i < size)
 {
 if (temp > array[i])
@@ -28,7 +29,7 @@ array[j] = temp;
 array[k] = temp2;
 
 print_array(array, size);
-i = j++;
 j++;
+i = j;
 }
 }
