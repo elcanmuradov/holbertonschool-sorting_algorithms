@@ -5,17 +5,17 @@
  * array: arg1
  * size: size of array
 */
-
+// 19, 48, 99, 71, 13, 52, 96, 73, 86, 7
+// temp 19
+// i 4 13 19.13 temp 13
 void selection_sort(int *array, size_t size)
 {
 size_t j, i;
 int k, temp, temp2;
-if (array == NULL || size <= 0)
-return;
-
 j = 0;
 while (j < size)
 {
+i = j;
 temp = array[j];
 while (i < size)
 {
@@ -33,6 +33,5 @@ array[k] = temp2;
 
 print_array(array, size);
 j++;
-i = j;
 }
 }
