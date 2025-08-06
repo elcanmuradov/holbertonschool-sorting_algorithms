@@ -6,8 +6,8 @@
 */
 void selection_sort(int *array, size_t size)
 {
-size_t j, i;
-int k, temp, temp2;
+size_t k, j, i;
+int temp, temp2;
 
 if (!array || size < 2)
 return;
