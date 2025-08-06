@@ -23,6 +23,8 @@ k = i;
 }
 i++;
 }
+if (temp == array(size - 1);
+return;
 
 temp2 = array[j];
 array[j] = temp;
