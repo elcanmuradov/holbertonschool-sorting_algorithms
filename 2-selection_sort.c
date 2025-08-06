@@ -5,9 +5,6 @@
  * array: arg1
  * size: size of array
 */
-// 19, 48, 99, 71, 13, 52, 96, 73, 86, 7
-// temp 19
-// i 4 13 19.13 temp 13
 void selection_sort(int *array, size_t size)
 {
 size_t j, i;
