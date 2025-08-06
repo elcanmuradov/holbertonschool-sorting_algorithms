@@ -31,3 +31,4 @@ print_array(array, size);
 i = j++;
 j++;
 }
+}
