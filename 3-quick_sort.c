@@ -15,7 +15,7 @@ temp = array[j];
 array[i] = temp;
 array[i-1] = pivot;
 }
-print_array(array);
+print_array(array, size);
 i--;
 j++;
 }
